@@ -1,0 +1,43 @@
+
+/* ------------------------------------- */
+/* the following relates to autocomplete */
+/* ------------------------------------- */
+* {
+    box-sizing: border-box;
+  }
+  
+  /*the container must be positioned relative:*/
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid var(--color);
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--color);
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: var(--hiBackground);
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: var(--hiBackground) !important;
+    color: var(--color);
+  }

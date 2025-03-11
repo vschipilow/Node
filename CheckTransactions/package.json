@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "db": "/Users/victorschipilow/Sqlite/Bank.db",
+    "downloadFolder": "/Users/victorschipilow/Downloads",
+    "backupFile": "/Users/victorschipilow/Library/Mobile Documents/com~apple~CloudDocs/iCloudData/Ledger.csv",
+    "port": "8081"
+}
