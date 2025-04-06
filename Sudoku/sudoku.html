@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    Sudoku
+</title>
+<style>
+:root {
+    --color: #EEEEEE;
+    --border-color: #777777;
+    --background: #222222;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background: #181800;
+    color: var(--color);
+}
+table, td {
+    border-style: none;
+    border-collapse: collapse;
+    text-align: left;
+    vertical-align: top;
+    border-color: #555555;
+}
+input {
+    font-size: 1em;
+    background: var(--background);
+    border: 1px;
+    border-color: var(--border-color);
+    border-style: solid;
+}
+input[type=button] {
+    color: #00FF00;
+}
+a {
+    color: #00B0FF;
+}
+select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    background: var(--background);
+    color: var(--color);
+    border: 1px;
+    border-color: var(--color);
+    border-style: solid;
+}
+.calculated {
+    color: #00CCCC;
+}
+.entered {
+    color: #FFFF00;
+}
+</style>
+<script src=sudoku.js></script>
+</head>
+<body onload="onload();">
+<h1>
+    Sudoku
+</h1>
+<label for="gridType">
+    Value Range:
+</label>
+<select id="gridType" onChange="ctrl.changeGrid();">
+    <option value="33N" selected>1..9</option>
+    <option value="33A">A..I</option>
+    <option value="44N">1..G</option>
+    <option value="44A">A..P</option>
+    <option value="45N">1..K</option>
+    <option value="45A">A..T</option>
+</select>
+<br>
+<br>
+<table id="table">
+</table>
+</body>
+</html>

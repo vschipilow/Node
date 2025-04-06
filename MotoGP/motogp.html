@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<title>
+    Moto GP
+</title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <form id="form" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <select id="comp" onChange="document.getElementById('form').submit()">
+                        <option value="2025 MotoGP">2025 MotoGP</option>
+                        <option value="2025 Moto2">2025 Moto2</option>
+                        <option value="2025 Moto3">2025 Moto3</option>
+                        <option value="2024 MotoGP">2024 MotoGP</option>
+                        <option value="2024 Moto2">2024 Moto2</option>
+                        <option value="2024 Moto3">2024 Moto3</option>
+                        <option value="2023 MotoGP">2023 MotoGP</option>
+                        <option value="2023 Moto2">2023 Moto2</option>
+                        <option value="2023 Moto3">2023 Moto3</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="sortBy" onChange="document.getElementById('form').submit()">
+                        <option value="number">Number</option>
+                        <option value="name">Name</option>
+                        <option value="country">Country</option>
+                        <option value="bike">Bike</option>
+                        <option value="team">Team</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>

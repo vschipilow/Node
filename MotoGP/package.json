@@ -1,0 +1,5 @@
+{
+    "type": "module",
+    "db": "/Users/victorschipilow/Sqlite/MotoGP.db",
+    "port": "8081"
+}
